@@ -1,0 +1,110 @@
+
+@fontColor :#333333;
+
+.font-open-sans(@x: 14px, @w){
+    font-family: 'Open Sans', sans-serif;
+    font-size: @x;
+    font-weight:  @w;
+}
+
+
+body {
+    .font-open-sans(14px, 400);
+     background-color: white;
+     margin: 0;
+}
+
+main {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 20%;
+    text-align: center;
+    width: 60%;    
+
+    section {
+        padding: 40px;
+        background-color: #f5f5f5;
+
+        input {
+            width: 100%;
+            height: 20px;
+            border: none;
+            padding: 20px 9px; 
+            margin-bottom: 10px;
+        }
+       
+        button {
+            width: 100px;
+            height: 20px;
+            text-align: center;
+            border: none;
+            background-color: black;
+            color: white;
+            float: right;
+        }
+    }
+
+    .display-results-area {
+        p {
+            background-color: #dddddd;
+            padding: 10px;
+            text-align: left;
+        }
+    }
+}
+
+.ui-autocomplete {
+    background: #4a4a4a;
+    max-height: 300px;
+    width: 90%!important;
+    overflow: auto;
+    //display: block !important;    
+    list-style: none outside none;
+}
+
+.ui-menu
+{
+    display: block;
+    text-align: left;
+    padding-top: 20px;
+    color: white;
+
+    .ui-menu-item {
+        line-height: 24px;
+        border-bottom: grey solid 1px;
+        margin-left: -20px;
+        width: 100%;
+    }
+}
+  
+.ui-state-focus {
+    color: #bdd6e6;
+    background-color: #454545;
+}
+.ui-helper-hidden-accessible div:last-child {
+  visibility: hidden;
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) { 
+   
+    main {
+        margin-left: 0;
+        width: 100%;
+
+        section {
+            padding: 10px;
+        }
+    }   
+}
+
+@media (min-width: 768px) and (max-width: 979px) { 
+  
+    main {
+        margin-left: 10%;
+        width: 80%;
+    }   
+}
+
+
+
